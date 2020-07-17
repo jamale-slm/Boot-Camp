@@ -29,7 +29,7 @@ guessBtn.addEventListener('click', function(){
 
     //Validate
     if(isNaN(guess) || guess>max || guess<min){
-        setMessage(`Please enter a number between ${min} and ${max}.`, 'red');
+        gameOver(false,`Please enter a number between ${min} and ${max}.`);
     }
 
     //Check if won
